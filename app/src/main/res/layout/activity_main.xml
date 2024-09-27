@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/lightYello"
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.Toolbar
@@ -15,7 +16,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:background="?attr/colorPrimary"
+        android:background="@color/darkBrown"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:layout_constraintTop_toTopOf="parent" />
@@ -28,7 +29,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:text="@string/name"
-        android:textColor="@color/Mycolor"
+        android:textColor="@color/darkBrown"
         android:textSize="@dimen/fontSize"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
@@ -53,7 +54,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:text="@string/address"
-        android:textColor="@color/Mycolor"
+        android:textColor="@color/darkBrown"
         android:textSize="@dimen/fontSize"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nameInput" />
@@ -78,7 +79,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:text="@string/profession"
-        android:textColor="@color/Mycolor"
+        android:textColor="@color/darkBrown"
         android:textSize="@dimen/fontSize"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addressInput" />
@@ -104,7 +105,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:text="@string/dreamJob"
-        android:textColor="@color/Mycolor"
+        android:textColor="@color/darkBrown"
         android:textSize="@dimen/fontSize"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/professionInput" />
@@ -129,7 +130,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:text="@string/favoriteFood"
-        android:textColor="@color/Mycolor"
+        android:textColor="@color/darkBrown"
         android:textSize="@dimen/fontSize"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dreamJobInput" />
@@ -148,12 +149,14 @@
 
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
+        android:background="@color/white"
         android:onClick="Button_Click"
         android:text="@string/buttonText"
+        android:textColorLink="@color/darkBrown"
         app:layout_constraintBottom_toTopOf="@+id/fragment_container"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
