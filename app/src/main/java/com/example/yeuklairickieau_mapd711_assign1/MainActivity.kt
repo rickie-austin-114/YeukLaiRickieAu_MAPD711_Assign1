@@ -16,10 +16,11 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
+        // add the toolbar on top
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
 
-
+        // add fragment to the layout
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_container, RickieFragment())
             .commit()
@@ -31,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    //defining a button click event
+    // submit event
     fun Button_Click(v: View) {
         //checking whether the submit button is clicked or not
         if (v.id == R.id.submit) {

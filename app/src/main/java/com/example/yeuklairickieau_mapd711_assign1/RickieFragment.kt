@@ -19,7 +19,7 @@ class RickieFragment : Fragment()  {
     private lateinit var onPauseText: TextView
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-
+        // initiate a view
         val view = inflater.inflate(R.layout.fragment_rickie, container, false)
 
         // connect the 4 TextView that display the text
@@ -31,6 +31,7 @@ class RickieFragment : Fragment()  {
         // display the message after onCreateView() is invoked
         onCreateViewText.text = "onCreateView() invoked"
 
+        // display the view
         return view
     }
 
