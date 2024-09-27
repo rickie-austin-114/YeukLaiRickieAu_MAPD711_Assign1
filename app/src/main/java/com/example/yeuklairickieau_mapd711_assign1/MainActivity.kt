@@ -39,13 +39,29 @@ class MainActivity : AppCompatActivity() {
             val i = Intent(this@MainActivity, SecondActivity::class.java)
 
             //java reference object for edit text control
-            val editText = findViewById<EditText>(R.id.editText)
+            val nameInput = findViewById<EditText>(R.id.nameInput)
 
             //getting value from edit text and assign to string message
-            val message = editText.text.toString()
+            val nameMessage = nameInput.text.toString()
 
             //assigning value into intent object using key and values pairs.
-            i.putExtra("Message", message)
+            i.putExtra("Name", nameMessage)
+
+            val addressInput = findViewById<EditText>(R.id.addressInput)
+            val addressMessage = addressInput.text.toString()
+            i.putExtra("Address", addressMessage)
+
+            val professionInput = findViewById<EditText>(R.id.professionInput)
+            val professionMessage = professionInput.text.toString()
+            i.putExtra("Profession", professionMessage)
+
+            val dreamJobInput = findViewById<EditText>(R.id.dreamJobInput)
+            val dreamJobMessage = dreamJobInput.text.toString()
+            i.putExtra("DreamJob", dreamJobMessage)
+
+            val favoriteFoodInput = findViewById<EditText>(R.id.favoriteFoodInput)
+            val favoriteFoodMessage = favoriteFoodInput.text.toString()
+            i.putExtra("FavoriteFood", favoriteFoodMessage)
 
             //starting sub activity
             startActivity(i)

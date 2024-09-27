@@ -23,12 +23,24 @@ class SecondActivity : AppCompatActivity() {
         val intent = intent
 
         //getting values from previous activity using intent object
-        val message = intent.getStringExtra("Message")
+        val name = intent.getStringExtra("Name")
+        val nameText = findViewById<TextView>(R.id.nameText)
+        nameText.text = "Name: $name"
 
-        //defining a java object for text view control
-        val textView = findViewById<TextView>(R.id.textView1)
+        val address = intent.getStringExtra("Address")
+        val addressText = findViewById<TextView>(R.id.addressText)
+        addressText.text = "Name: $address"
 
-        //assigning message value to textview control
-        textView.text = "Message: $message"
+        val profession = intent.getStringExtra("Profession")
+        val professionText = findViewById<TextView>(R.id.professionText)
+        professionText.text = "Profession: $profession"
+
+        val dreamJob = intent.getStringExtra("DreamJob")
+        val dreamJobText = findViewById<TextView>(R.id.dreamJobText)
+        dreamJobText.text = "Dream Job: $dreamJob"
+
+        val favoriteFood = intent.getStringExtra("FavoriteFood")
+        val favoriteFoodText = findViewById<TextView>(R.id.favoriteFoodText)
+        favoriteFoodText.text = "Favorite Food: $favoriteFood"
     }
 }

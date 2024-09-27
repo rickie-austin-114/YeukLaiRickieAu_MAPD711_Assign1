@@ -6,8 +6,12 @@
     <string name="editName">Type Your Name</string>
     <string name="address">Your Address:</string>
     <string name="editAddress">Type Your Address</string>
-    <string name="name">Your Name:</string>
-    <string name="editName">Type Your Name</string>
+    <string name="profession">Your Profession:</string>
+    <string name="editProfession">Past or current job</string>
+    <string name="dreamJob">Your Dream job:</string>
+    <string name="editDreamJob">Type here</string>
+    <string name="favoriteFood">Favorite Food:</string>
+    <string name="editFavoriteFood">Type here</string>
 
 
 
