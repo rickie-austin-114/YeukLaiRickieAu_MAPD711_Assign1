@@ -6,13 +6,13 @@
     android:background="#ADD8E6">
 
     <TextView
-        android:id="@+id/onCreateLabel"
+        android:id="@+id/onCreateViewLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="20dp"
-        android:text="OnCreate"
+        android:layout_marginTop="25dp"
+        android:text=""
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,8 +23,8 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="40dp"
-        android:text="OnStart"
+        android:layout_marginTop="50dp"
+        android:text=""
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -35,8 +35,8 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="60dp"
-        android:text="onResume"
+        android:layout_marginTop="75dp"
+        android:text=""
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -47,8 +47,8 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="80dp"
-        android:text="onPause"
+        android:layout_marginTop="100dp"
+        android:text=""
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
