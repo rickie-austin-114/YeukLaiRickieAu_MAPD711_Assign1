@@ -12,7 +12,7 @@ class SecondActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_second)
+        setContentView(R.layout.strings)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -29,6 +29,6 @@ class SecondActivity : AppCompatActivity() {
         val textView = findViewById<TextView>(R.id.textView1)
 
         //assigning message value to textview control
-        textView.text = message
+        textView.text = "Message: $message"
     }
 }

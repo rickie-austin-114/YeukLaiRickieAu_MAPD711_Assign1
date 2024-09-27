@@ -2,4 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="lightYello">#FFF9EBC7</color>
+    <color name="brown">#FFAD9476</color>
+    <color name="darkBrown">#FF8D765B</color>
+
+
+
+
+    <color name="purple">#FF3700B3</color>
+    <color name="Mycolor">#6433FF</color>
 </resources>
